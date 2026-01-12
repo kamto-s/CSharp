@@ -6,10 +6,9 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Im learning c#");
-            Console.WriteLine("It is awesome");
-            Console.WriteLine(3 + 3);
+            string name = "Jhonny";
+
+            Console.WriteLine(name);
         }
     }
 }
