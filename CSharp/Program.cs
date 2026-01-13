@@ -20,6 +20,17 @@ namespace CSharp
             Console.WriteLine(sum1);
             Console.WriteLine(sum2);
             Console.WriteLine(sum3);
+
+            Console.WriteLine("======================== Comparison Operators =======================");
+
+            int a = 10;
+            int b = 10;
+
+            Console.WriteLine(a >= b);
+
+            int xz = 10;
+            int yz = 20;
+            Console.WriteLine(xz != yz);
         }
     }
 }
