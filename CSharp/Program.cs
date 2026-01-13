@@ -6,46 +6,34 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("======================= VARIABLES ========================");
-            string name = "Jhonny";
-            Console.WriteLine(name);
-
-            int myNum = 15;
-            myNum = 20;
+            Console.WriteLine("======================= DATA TYPE ========================");
+            int myNum = 100000;
             Console.WriteLine(myNum);
 
-            double myDouble = 19.99;
+            long myNumLong = 15000000000L;
+            Console.WriteLine(myNumLong);
+
+            float myFloat = 5.75F;
+            Console.WriteLine(myFloat);
+
+            double myDouble = 19.99D;
             Console.WriteLine(myDouble);
 
-            char myChar = 'D';
-            Console.WriteLine(myChar);
+            float f1 = 35e3F;
+            double d1 = 12E4D;
+            Console.WriteLine(f1);
+            Console.WriteLine(d1);
 
-            bool myBool = true;
-            Console.WriteLine(myBool);
+            bool isCSharpFun = true;
+            bool isFishTasty = false;
+            Console.WriteLine(isCSharpFun);
+            Console.WriteLine(isFishTasty);
 
-            Console.WriteLine("Hello World!");
+            char myGrade = 'B';
+            Console.WriteLine(myGrade);
 
-            Console.WriteLine("======================= VARIABLES CONST ========================");
-            const int myConstNum = 10;
-            Console.WriteLine(myConstNum);
-
-            Console.WriteLine("======================= VARIABLES DISPLAY ========================");
-            string firstName = "John";
-            string lastName = "Doe";
-            string fullName = firstName + " " + lastName;
-            Console.WriteLine(fullName);
-
-            int x = 5;
-            int y = 4;
-            int z = x + y;
-            Console.WriteLine(z);
-
-            Console.WriteLine("========================= Multiple Variables ======================");
-            int a, b, c;
-            a = b = c = 50;
-            Console.WriteLine(a + b + c);
-
-
+            string greeting = "Hello World";
+            Console.WriteLine(greeting);
         }
     }
 }
