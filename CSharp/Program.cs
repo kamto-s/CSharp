@@ -6,18 +6,20 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("======================= User Input ========================");
-           
-            Console.WriteLine("Enter your name");
-            string name = Console.ReadLine();
+            Console.WriteLine("======================= Operators ========================");
 
-            Console.WriteLine("Enter your age");
-            int age = Convert.ToInt32(Console.ReadLine());
-
-            Console.WriteLine("Hello, " + name);
-            Console.WriteLine("Your age is " + age);
+            int x = 10 + 50;
+            Console.WriteLine(x);
 
             Console.WriteLine("===============================================");
+
+            int sum1 = 100 + 50;
+            int sum2 = sum1 + 250;
+            int sum3 = sum2 + sum2;
+
+            Console.WriteLine(sum1);
+            Console.WriteLine(sum2);
+            Console.WriteLine(sum3);
         }
     }
 }
