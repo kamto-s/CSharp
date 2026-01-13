@@ -6,34 +6,30 @@ namespace CSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("======================= DATA TYPE ========================");
-            int myNum = 100000;
-            Console.WriteLine(myNum);
+            Console.WriteLine("======================= TYPE CASTING ========================");
+            int myInt = 10;
+            double myDouble = myInt;
 
-            long myNumLong = 15000000000L;
-            Console.WriteLine(myNumLong);
-
-            float myFloat = 5.75F;
-            Console.WriteLine(myFloat);
-
-            double myDouble = 19.99D;
+            Console.WriteLine(myInt);
             Console.WriteLine(myDouble);
 
-            float f1 = 35e3F;
-            double d1 = 12E4D;
-            Console.WriteLine(f1);
-            Console.WriteLine(d1);
+            Console.WriteLine("===============================================");
 
-            bool isCSharpFun = true;
-            bool isFishTasty = false;
-            Console.WriteLine(isCSharpFun);
-            Console.WriteLine(isFishTasty);
+            double myDouble2 = 9.78;
+            int myInt2 = (int)myDouble2;
 
-            char myGrade = 'B';
-            Console.WriteLine(myGrade);
+            Console.WriteLine(myDouble2);
+            Console.WriteLine(myInt2);
 
-            string greeting = "Hello World";
-            Console.WriteLine(greeting);
+            Console.WriteLine("===============================================");
+            int myInt3 = 9;
+            double myDouble3 = 4.25;
+            bool myBool = false;
+
+            Console.WriteLine(Convert.ToString(myInt3));
+            Console.WriteLine(Convert.ToDouble(myInt3));
+            Console.WriteLine(Convert.ToInt32(myDouble3));
+            Console.WriteLine(Convert.ToString(myBool));
         }
     }
 }
