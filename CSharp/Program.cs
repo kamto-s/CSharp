@@ -8,29 +8,27 @@ namespace CSharp
         {
             Console.WriteLine("======================= Operators ========================");
 
-            int x = 10 + 50;
-            Console.WriteLine(x);
+            int angka1;
+            Console.WriteLine("Tulis angka pertama: ");
+            while (!int.TryParse(Console.ReadLine(), out angka1))
+            {
+                Console.WriteLine("Input tidak valid, coba lagi");
+                Console.WriteLine("Tulis angka pertama: ");
+            }
 
-            Console.WriteLine("===============================================");
+            int angka2;
+            Console.WriteLine("Tulis angka kedua: ");
+            while (!int.TryParse(Console.ReadLine(), out angka2))
+            {
+                Console.WriteLine("Input tidak valid, coba lagi");
+                Console.WriteLine("Tulis angka kedua: ");
+            }
 
-            int sum1 = 100 + 50;
-            int sum2 = sum1 + 250;
-            int sum3 = sum2 + sum2;
-
-            Console.WriteLine(sum1);
-            Console.WriteLine(sum2);
-            Console.WriteLine(sum3);
-
-            Console.WriteLine("======================== Comparison Operators =======================");
-
-            int a = 10;
-            int b = 10;
-
-            Console.WriteLine(a >= b);
-
-            int xz = 10;
-            int yz = 20;
-            Console.WriteLine(xz != yz);
+            Console.WriteLine("===================== Hasil ========================");
+            Console.WriteLine("Penjumlahan: " + (angka1 + angka2));
+            Console.WriteLine("Pengurangan: " + (angka1 - angka2));
+            Console.WriteLine("Perkalian: " + (angka1 * angka2));
+            Console.WriteLine("Pembagian: " + ((double)angka1 / angka2));
         }
     }
 }
