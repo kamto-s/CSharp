@@ -1,5 +1,7 @@
 ﻿using System.Globalization;
 
+Console.WriteLine("Hello, World!");
+
 //int k;
 //int n = 10;
 //string kota = "Jakarta";
@@ -88,24 +90,157 @@
 
 //Console.WriteLine(pulau);
 
+//Console.WriteLine("=========================================================");
+////13. List dan Dictionary
+//List<string> namaKota = new List<string> { "Jakarta", "Bandung", "Semarang", "Surabaya" };
+
+//Dictionary<string, string> capitals = new Dictionary<string, string>
+//{
+//    {"Indonesia", "Jakarta"},
+//    {"Malaysia", "Kuala Lumpur"},
+//    {"Singapore", "Singapore"},
+//    {"Thailand", "Bangkok"}
+//};
+
+//Console.WriteLine("Kota: ");
+//namaKota.ForEach(kota => Console.WriteLine(kota));
+
+//Console.WriteLine();
+
+//Console.WriteLine("Ibu kota negara: ");
+//foreach (var item in capitals)
+//    Console.WriteLine($"{item.Key}: {item.Value}");
+
+//Console.WriteLine("=========================================================");
+////15. Queue dan Stack
+//Queue<string> queue = new Queue<string>();
+//queue.Enqueue("apple");
+//queue.Enqueue("banana");
+//queue.Enqueue("cherry");
+
+//Console.WriteLine("Queue: ");
+//while (queue.Count > 0)
+//    Console.WriteLine(queue.Dequeue());
+
+//Stack<string> stack = new Stack<string>();
+//stack.Push("apple");
+//stack.Push("banana");
+//stack.Push("cherry");
+
+//Console.WriteLine("\nStack: ");
+//while (stack.Count > 0)
+//    Console.WriteLine(stack.Pop());
+
+//Console.WriteLine("=========================================================");
+//// percabangan if, else
+//Console.Write("Masukkan umur: ");
+//string hasilUmur = Console.ReadLine();
+
+//if (int.TryParse(hasilUmur, out int umur))
+//{
+//    if (umur >= 17)
+//        Console.WriteLine("Kamu sudah dewasa");
+//    else
+//        Console.WriteLine("Kamu belum dewasa");
+//}
+//else
+//{
+//    Console.WriteLine("Input harus angka!");
+//}
+
+//Console.WriteLine("=========================================================");
+//// percabangan switch
+//Console.Write("Masukkan nama hari: ");
+//string hari = Console.ReadLine();
+
+//switch (hari.ToLower())
+//{
+//    case "senin":
+//        Console.WriteLine("Hari pertama dalam minggu kerja");
+//        break;
+//    case "sabtu":
+//    case "minggu":
+//        Console.WriteLine("Hari akhir pekan");
+//        break;
+//    default:
+//        Console.WriteLine("Hari biasa");
+//        break;
+//}
+
+//Console.WriteLine("=========================================================");
+//// perulangan for
+//for (int i = 0; i < 5; i++)
+//    Console.WriteLine($"Nilai ke: {i}");
+
+//for (int i = 0; i < 3; i++)
+//    for (int j = 5; j < 8; j++)
+//        Console.WriteLine($"nilai ke i = {i}, j = {j}");
+
+//Console.WriteLine("=========================================================");
+//// perulangan while, do while
+//int count = 0;
+
+//Console.WriteLine("\nPerulangan while:");
+//while (count < 3)
+//{
+//    Console.WriteLine($"Nilai count: {count}");
+//    count++;
+//}
+
+//Console.WriteLine("\nPerulangan do-while:");
+//do
+//{
+//    Console.WriteLine($"Nilai count: {count}");
+//    count--;
+//}
+//while (count > 0);
+
+//Console.WriteLine("=========================================================");
+//// perulangan foreach
+
+//List<string> fruits = new List<string> { "apple", "banana", "cherry" };
+//Console.WriteLine("Perulangan foreach:");
+
+//fruits.ForEach(fruit => Console.WriteLine(fruit));
+
+//Console.WriteLine();
+
+//foreach (var fruit in fruits)
+//    Console.WriteLine(fruit);
+
+//Console.WriteLine("=========================================================");
+//// perulangan continue, break
+//Console.WriteLine("Perulangan dengan continue dan break");
+
+//for (int i = 0; i < 10; i++)
+//{
+//    if (i % 2 == 0)
+//        continue; // lewati bilangan genap
+//    if (i > 5)
+//        break; // hentikan perulangan jika i > 5
+//    Console.WriteLine($"Nilai i: {i}");
+//}
+
 Console.WriteLine("=========================================================");
-//13. List dan Dictionary
-List<string> namaKota = new List<string> { "Jakarta", "Bandung", "Semarang", "Surabaya" };
+// fungsi dan method
 
-Dictionary<string, string> capitals = new Dictionary<string, string>
+void Hello()
 {
-    {"Indonesia", "Jakarta"},
-    {"Malaysia", "Kuala Lumpur"},
-    {"Singapore", "Singapore"},
-    {"Thailand", "Bangkok"}
-};
+    Console.WriteLine("Hello c#");
+}
 
-Console.WriteLine("Kota: ");
-namaKota.ForEach(kota => Console.WriteLine(kota));
+void Salam(string nama)
+{
+    Console.WriteLine($"Hello, {nama}. Selamat pagi!");
+}
 
-Console.WriteLine();
+int Tambah(int bil1, int bil2)
+{
+    return bil1 + bil2;
+}
 
-Console.WriteLine("Ibu kota negara: ");
-foreach (var item in capitals)
-    Console.WriteLine($"{item.Key}: {item.Value}");
+Hello();
+Salam("Andi");
 
+int hasilTambah = Tambah(5, 8);
+Console.WriteLine($"Total tambah: {hasilTambah}");
